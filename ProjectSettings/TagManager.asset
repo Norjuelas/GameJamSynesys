@@ -6,14 +6,15 @@ TagManager:
   tags:
   - SpawnPoint
   - Rooms
+  - enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - target
   - Water
   - UI
-  - 
+  - obstruction
   - 
   - 
   - 
