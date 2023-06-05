@@ -20,7 +20,8 @@ public class roomSpawner : MonoBehaviour
     }
     void Spawn()
     {
-        if (spawned == false)
+
+        if (spawned == false && templates.rooms.Count<100)
         {
             if (openSide == 1)
             {
@@ -44,6 +45,7 @@ public class roomSpawner : MonoBehaviour
                 Instantiate(templates.rightRooms[random], transform.position, templates.rightRooms[random].transform.rotation);
             }
             spawned = true;
+            
         }
      }
     private void OnTriggerEnter(Collider other)
